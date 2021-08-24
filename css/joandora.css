@@ -1,0 +1,43 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'twayair';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twayair.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* 초기화 */
+body, h1, h2, h3, p, ul, figure {margin: 0; padding: 0;}
+li {list-style: none;}
+a {text-decoration: none;}
+hr {display: none;}
+.hidden {position: absolute; left: -999px;}
+address {font-style: normal;}
+small {font-size: 1em;}
+/* 공통적용 */
+body { width: 720px; margin: 0 auto; background: #68dbf8;}
+h1 {font-family: "twayair"; text-transform: uppercase;}
+a {color: #000}
+/* 헤더 */
+#header { position: relative; height: 275px; background: url(../images/bg.png) no-repeat center / cover;}
+#header .hgroup {
+    /* float: right; margin:145px 30px 0 0;  */
+    position: absolute; bottom: 30px; right: 32px;
+    color: #fff;}
+#header h1 {font-size: 40px;}
+#header h2 {font-size: 19px; margin-top: 30px;}
+/* gnb */
+#gnb {height: 60px;}
+#gnb ul li {float: left; width: 25%; text-align: center; }
+#gnb ul li a { display: block; height: 60px; line-height: 60px; background: #036; color: #fff;}
+#gnb ul li.on a {background-color: #fff; color: #000;}
+#gnb ul li a:hover { background: orange; }
+
+/* 메인 */
+#content1 {background: #fff; padding: 20px;}
+#content1 h3 {margin: 20px 0;}
+#content1 figure {margin-left: 40px;}
+#content1 figure:nth-of-type() {margin-top: 20px;}
+
+/* footer */
+#footer { padding: 30px 0 10px; text-align: center; background: #030; color:#fff}
+#footer p{margin-bottom: 15px;}
